@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator App</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ad0d56fe3e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="wrapper">
+            <div class="textarea-wrapper">
+                <textarea class="from-text-input" placeholder="Enter text"></textarea>
+                <textarea class="to-text-input" placeholder="Translation" readonly disabled></textarea>
+            </div>
+            <div class="controls">
+                <div>
+                    <i title="Copy" class="fa-solid fa-copy from-copy"></i>
+                    <i title="Paste" class="fa-solid fa-clipboard from-paste"></i>
+                    <i title="Speech" class="fa-solid fa-volume-high from-voice"></i>
+                    <select id="select" class="first-select">
+                    </select>
+                </div>
+                <!-- <i class="fa-solid fa-arrow-right-arrow-left exchange-icon"></i> -->
+                <div>
+                    <select id="select" class="second-select">
+                    </select>
+                    <i title="Copy" class="fa-solid fa-copy to-copy"></i>
+                    <i title="Paste" class="fa-solid fa-clipboard to-paste"></i>
+                    <i title="Speech" class="fa-solid fa-volume-high to-voice"></i>
+                </div>
+            </div>
+            
+        </div>
+        <button>Translate</button>
+    </div>
+
+    <script src="js/countries.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
